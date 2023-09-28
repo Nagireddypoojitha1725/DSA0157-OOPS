@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class student{
+	public:
+		string name;
+		int regno;
+		student(){
+			name="dimpu";
+			regno=192111725;
+		}
+		~student()
+		{
+			cout<<"\ndestructed called for"<<name;
+		}
+		void display()
+		{
+			cout<<"\nname of the student"<<name;
+			cout<<"\nregister number of student"<<regno;
+		}
+};
+int main()
+{
+	student s;
+	s.display();
+	return 0;
+}
