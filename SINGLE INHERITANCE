@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class parent{
+	public:
+		string name;
+		int property;
+		parent()
+		{
+			name="nagireddy";
+			property=15;
+		}
+};
+class child:public parent
+{
+	public:
+		string edu;
+		int grade;
+		child()
+		{
+			edu="b.tech";
+			grade=10;
+		}
+};
+int main()
+{
+	child c;
+	cout<<"parent property:";
+	cout<<"\n"<<c.name;
+	cout<<"\n"<<c.property;
+	cout<<"\nchild property";
+	cout<<"\n"<<c.edu;
+	cout<<"\n"<<c.grade;
+	return 0;
+}
